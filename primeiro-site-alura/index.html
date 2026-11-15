@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Culturama</title>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+        <!-- o metodo "get vai todos os dados cadastrados no forms para url"  -->
+        <form action="" method="get">
+
+            <!--Cria divisão em campos-->
+         <fieldset>
+            <legend>Dados Pessoais</legend>
+          <!--Dados Pessoais-->  
+            <label for ="userName">Nome: </label>
+            <!-- o input vai ser pra colocar o tipo se é texto, numero, escolha e etc. O required vai ser para campos obrigatorios  -->
+          <input type="text" name ="userName" required>
+          <br>
+          <label for = "userAge">Idade:</label>
+          <input type="number" name ="userAge" min ="12" max="100" required >
+         <br>
+          <label for=" birthdate">Data de Nacimento:</label>
+          <input type="date" name ="birthdate" >
+           <br>
+          <label for = "userEmail"> Email:</label>
+          <input type = "email" name ="userEmail">
+          <br>
+          <label for = "userPhoneNumber"> Telefone:</label>
+          <input type = "tel" name = "userPhoneNumber" pattern="[0-9]{11}" placeholder="(98) 98989 - 9898" >
+           <br>
+          <label for = "userImage">Uploud de Foto: </label>
+          <input type = "file" accept="image/*" name = "userImage">
+         </fieldset>
+
+
+
+
+          <button type= "submit">Enviar</button>
+
+        </form>
+    </section>
+</body>
+</html>
